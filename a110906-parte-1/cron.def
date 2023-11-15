@@ -1,0 +1,22 @@
+###############################################################################
+## ISCTE-IUL: Trabalho prático de Sistemas Operativos 2022/2023
+##
+## Aluno: Nº:110906       Nome:Alexandre Miguel Sargento Carvoeiro
+## Nome do Módulo: cron.def
+## Descrição/Explicação do Módulo:
+##Está nos comentários.
+##
+## Explicação de quais os comandos a usar para configurar o seu sistema Linux
+## usando este ficheiro:
+##
+##
+###############################################################################
+
+#Para agendar a execução do script refill.sh todas as quintas-feiras às 9h17
+# 17 9: representa o horário de execução, no caso 9h17
+# *: representa o dia do mês e o mês em que a tarefa deve ser executada.
+# 4: representa o dia da semana em que a tarefa deve ser executada.
+# /home/a110906/parte-1; refill.sh representa o caminho completo para que o script seja executado
+
+17 9 * * 4 cd /home/a110906/parte-1; ./refill.sh
+
